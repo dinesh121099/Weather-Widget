@@ -1,0 +1,147 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.widget{
+  border: 2px solid rgb(190, 190, 190);
+  background-image: url("https://static.vecteezy.com/system/resources/previews/049/207/850/non_2x/the-transition-from-left-to-right-from-the-gray-threatening-clouds-smoothly-turns-into-a-clear-sunny-clear-sky-a-single-picture-just-the-sky-without-other-objects-on-the-right-a-clear-sunny-sky-free-photo.jpg");
+  background-size: cover;
+  border-radius: 20px;
+  height: 150px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  color: black;
+}
+.place{
+  margin: 10px 0 0 5px;
+  font-weight: bold;
+}
+.temp{
+  width: 70px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(0, 0, 0);
+  margin: 20px 0 0 40px;
+  border-radius: 15px;
+  color: black;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.dateNtime{
+  margin-right: 10px;
+}
+.date{
+  font-weight: bold;
+  margin-top: 10px;
+}
+.time{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.elevation{
+  font-family: cursive;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 5px #000000,
+        0 0 10px #000000,
+        0 0 20px rgb(0, 0, 0),
+        0 0 30px rgb(0, 0, 0),
+        0 0 40px rgb(0, 0, 0),
+        0 0 55px rgb(0, 0, 0),
+        0 0 70px rgb(0, 0, 0);
+} */
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.widget {
+  background: linear-gradient(120deg, rgba(255, 62, 62, 0.8), rgba(45, 125, 255, 0.8));
+  border-radius: 25px;
+  width: 350px;
+  height: 220px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.widget:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.place {
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.temp {
+  background: rgba(255, 255, 255, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  width: 90px;
+  height: 70px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.temp:hover {
+  transform: scale(1.1);
+}
+
+.dateNtime {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.date {
+  font-size: 1.1rem;
+  font-weight: normal;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.time {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.elevation {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  color: #fff;
+  padding: 12px 18px;
+  margin-top: 20px;
+  font-family: 'Courier New', monospace;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+}
+
