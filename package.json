@@ -1,12 +1,12 @@
 {
-  "homepage": "https://dinesh121099.github.io/Weather-Widget",
+  "homepage": "https://dinesh121099.github.io/Weather-Widget/",
   "name": "testproject1",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
